@@ -26,8 +26,10 @@ function question(name, start, end, inc){
 	}
 	//logic for counting
 	else{
+		var iter = 1;
 		while(st < en){
-			text += st + "<br>";
+			text += '<p style="color:red;">iteration # ' + iter + '</p> <p style="color:yellow;">==============================</p><p style="color=red;">' + st + '</p><br>';
+			iter++;
 			st += x;
 		}
 	}
