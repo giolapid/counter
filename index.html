@@ -1,16 +1,14 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+    	<meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="app.css">
-        <title>Counter</title>
+        <title>Counter App</title>
     </head>
 
     <body>
         <div class="Container">
            <h1 id="intro">Hello Welcome to my iteration page</h1>
-           <p id="append"></p>
-
-
            <form name = "form">
  		 		Please enter your name:<br>
   				<input type="text" name="name">
@@ -18,8 +16,18 @@
   				Please enter a starting number between 5 to 100:<br>
   				<input type="number" name="num">
   				<br>
-  				<input type="button" value="Do it!" onClick="question(form.name.value, form.num.value)"/>
+  				Please enter a ending number between 5 to 100:<br>
+  				<input type="number" name="end">
+  				<br>
+  				Please select an increment:<br>
+  				<input type="number" name="increment">
+  				<br>
+  				<input type="button" value="Do it!" onClick="question(form.name.value, form.num.value, form.end.value, form.increment.value)"/>
 			</form> 
+        </div>
+
+        <div>
+        	<p id="append"></p>
         </div>
         <script type="text/javascript" src="app.js"></script>
     </body>
